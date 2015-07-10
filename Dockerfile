@@ -7,6 +7,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
       curl \
       libpcre3 \
       librecode0 \
+      libmysqlclient-dev \
       libsqlite3-0 \
       libxml2 \
     && apt-get clean \
@@ -78,6 +79,7 @@ RUN buildDeps=" \
             --with-fpm-group=www-data \
             --disable-cgi \
             --enable-mysqlnd \
+            --with-mysql \
             --with-curl \
             --with-openssl=/usr/local/ssl \
             --with-readline \
