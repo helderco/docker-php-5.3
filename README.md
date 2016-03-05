@@ -18,7 +18,7 @@ For PHP projects run through the command line interface (CLI), you can do the fo
 
 ### Create a `Dockerfile` in your PHP project
 
-    FROM helder/php-5.3
+    FROM andthensome/docker-php-5.3-fpm
     COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "php", "./your-script.php" ]
@@ -43,3 +43,5 @@ If you don't want to include a `Dockerfile` in your project, it is sufficient to
 # License
 
 View [license information](http://php.net/license/) for the software contained in this image.
+
+Forked from https://github.com/helderco/docker-php-5.3
