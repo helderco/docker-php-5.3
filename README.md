@@ -1,3 +1,5 @@
+Forked from https://github.com/helderco/docker-php-5.3
+
 # PHP 5.3 FPM
 
 PHP 5.3 [reached EOL](http://php.net/eol.php) on 14 Aug 2014 and thus, official docker support was [dropped](https://github.com/docker-library/php/pull/20). I still needed to run 5.3 with FPM so I built this image based on the latest official builds of PHP.
@@ -43,5 +45,3 @@ If you don't want to include a `Dockerfile` in your project, it is sufficient to
 # License
 
 View [license information](http://php.net/license/) for the software contained in this image.
-
-Forked from https://github.com/helderco/docker-php-5.3
