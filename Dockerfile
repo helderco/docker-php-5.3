@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Helder Correia <me@heldercorreia.com>
+MAINTAINER Ryan Kes <ryan@andthensome.nl>
 
 # persistent / runtime deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
