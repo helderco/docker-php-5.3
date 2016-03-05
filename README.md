@@ -1,4 +1,4 @@
-Forked from https://github.com/helderco/docker-php-5.3
+# Forked from https://github.com/helderco/docker-php-5.3
 
 # PHP 5.3 FPM
 
