@@ -46,7 +46,7 @@ for ext in "${exts[@]}"; do
             if [ -f "$module" ]; then
                 if grep -q zend_extension_entry "$module"; then
                     # https://wiki.php.net/internals/extensions#loading_zend_extensions
-                    line="zend_extension=$(basename "$module")"
+                    line="zend_extension=$(readlink -f "$module")"
                 else
                     line="extension=$(basename "$module")"
                 fi
