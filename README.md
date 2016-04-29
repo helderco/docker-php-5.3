@@ -1,3 +1,5 @@
+# Forked from https://github.com/helderco/docker-php-5.3
+
 # PHP 5.3 FPM
 
 PHP 5.3 [reached EOL](http://php.net/eol.php) on 14 Aug 2014 and thus, official docker support was [dropped](https://github.com/docker-library/php/pull/20). I still needed to run 5.3 with FPM so I built this image based on the latest official builds of PHP.
@@ -18,7 +20,7 @@ For PHP projects run through the command line interface (CLI), you can do the fo
 
 ### Create a `Dockerfile` in your PHP project
 
-    FROM helder/php-5.3
+    FROM andthensome/docker-php-5.3-fpm
     COPY . /usr/src/myapp
     WORKDIR /usr/src/myapp
     CMD [ "php", "./your-script.php" ]
