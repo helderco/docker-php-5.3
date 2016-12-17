@@ -1,5 +1,5 @@
 FROM debian:jessie
-MAINTAINER Helder Correia <me@heldercorreia.com>
+MAINTAINER https://github.com/helderco/
 
 # persistent / runtime deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -126,6 +126,9 @@ RUN set -ex \
     echo '[www]'; \
     echo 'listen = 9000'; \
   } | tee php-fpm.d/zz-docker.conf
+
+# fix some weird corruption in this file
+RUN sed -i -e "" /usr/local/etc/php-fpm.d/www.conf
 
 EXPOSE 9000
 CMD ["php-fpm"]
